@@ -1,4 +1,5 @@
 using FluentMigrator;
+using FluentMigrator.SqlServer;
 
 namespace Migrations.Sprint001
 {
@@ -9,6 +10,7 @@ namespace Migrations.Sprint001
         public override void Up()
         {
             Insert.IntoTable("Tasks")
+                .WithIdentityInsert()
                 .Row(new
                 {
                     Id = 1,
