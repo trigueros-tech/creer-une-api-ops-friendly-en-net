@@ -6,8 +6,13 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FluentMigrator.Runner" Version="3.2.15" />
         <PackageReference Include="Oakton.AspNetCore" Version="3.0.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Migrations\Migrations.csproj" />
     </ItemGroup>
 
 </Project>
