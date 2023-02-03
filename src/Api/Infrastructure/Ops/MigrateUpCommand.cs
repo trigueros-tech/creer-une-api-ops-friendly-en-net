@@ -41,6 +41,7 @@ namespace Api.Infrastructure.Ops
             }
 
             var services = CreateServices(connectionString, input.TagsFlag);
+            
             UpdateDatabase(services, input.VersionFlag);
             return Task.FromResult(true);
         }
